@@ -9,4 +9,8 @@ const database = new Sequelize({
   port: '5432'
 });
 
+/**
+ * Export `Database`
+ */
+
 module.exports = database;

@@ -8,7 +8,8 @@ module.exports = {
   overrides: [
     {
       env: {
-        node: true
+        node: true,
+        jest: true
       },
       files: [
         '.eslintrc.{js,cjs}'
@@ -22,6 +23,7 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   rules: {
-    semi: ['error', 'always']
+    semi: ['error', 'always'],
+    'no-undef': 'off'
   }
 };
