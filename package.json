@@ -1,0 +1,19 @@
+{
+  "name": "stock-api",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/JuninhoFreitas/stock-api",
+  "author": "Junior Freitas <joaofbjunior01@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@hono/node-server": "^1.2.0",
+    "hono": "^3.7.2"
+  },
+  "engines": {
+    "node": ">=18.8.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "type": "module"
+}
