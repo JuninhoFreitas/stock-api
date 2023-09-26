@@ -1,7 +1,8 @@
-import { serve } from '@hono/node-server'
-import { Hono } from 'hono'
+import { serve } from '@hono/node-server';
+import { Hono } from 'hono';
 
-const app = new Hono({port: 3000})
-app.get('/', (c) => c.text('Hello Hono!'))
+const app = new Hono({ port: 3000 });
 
-serve(app)
+app.get('/', (c) => c.text('Hello Hono!'));
+
+serve(app);

@@ -8,6 +8,7 @@
   "dependencies": {
     "@hono/node-server": "^1.2.0",
     "hono": "^3.7.2",
+    "husky": "4.3.0",
     "pg": "^8.11.3",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.33.0"
@@ -18,5 +19,21 @@
   "scripts": {
     "start": "node index.js"
   },
-  "type": "module"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+     "*.js": "eslint --fix" 
+  },
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "lint-staged": "^14.0.1"
+  }
 }
