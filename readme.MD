@@ -6,8 +6,9 @@
 
 
 ## Using:
- - node@18.18.0 LTS
- - yarn
- - postgres
- - hono
- - docker
+ - Node@18.18.0 LTS
+ - Yarn
+ - Postgres
+ - Hono (https://hono.dev/)
+ - Docker
+ - Jest
