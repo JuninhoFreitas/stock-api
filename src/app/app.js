@@ -1,8 +1,7 @@
 import { serve } from '@hono/node-server';
 import { Hono } from 'hono';
+import router from './routes/router.js';
 
 const app = new Hono({ port: 3000 });
-
-app.get('/', (c) => c.text('Hello Hono!'));
-
+app.route('/', router);
 serve(app);
